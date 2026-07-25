@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../day2_userinput/day2_userinput.csproj" Id="ef2caac6-2e3b-4583-850d-23ee8c13555a" />
+  <Project Path="Day01_Introduction/Day01_Introduction.csproj" Id="49aa93cb-7594-4750-bc84-5b53fb6ef268" />
+</Solution>
