@@ -31,6 +31,29 @@ namespace conditional_statement
 
             }
 
+
+
+            //nested if//
+            string username = "admin";
+            string password = "1234";
+
+            if (username == "admin")
+            {
+                if (password == "1234")
+                {
+                    Console.WriteLine("Login Successful");
+                }
+                else
+                {
+                    Console.WriteLine("Wrong Password");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Wrong Username");
+            }
+
+            Console.ReadLine();
         }
 
     }
