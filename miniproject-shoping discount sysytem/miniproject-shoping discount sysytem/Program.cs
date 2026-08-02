@@ -13,7 +13,7 @@ namespace miniproject_shoping_discount_sysytem
             Console.Write("Enter Purchase Amount: ");
             int amount = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Are you a member(yes/no): ");
+            Console.Write("Are you Member(yes/no): ");
             string member = Console.ReadLine();
 
             if (amount >= 5000 && member == "yes")
