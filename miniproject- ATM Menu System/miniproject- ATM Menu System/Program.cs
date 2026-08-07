@@ -21,6 +21,8 @@ namespace miniproject__ATM_Menu_System
             Console.Write("Enter your choice:");
             int choice = Convert.ToInt32(Console.ReadLine());
 
+                
+
             switch (choice)
             {
                 case 1:
@@ -28,10 +30,15 @@ namespace miniproject__ATM_Menu_System
                     break;
 
                 case 2:
-                    Console.WriteLine("Withdraw Successful");
+                    Console.Write("Enter Withdraw Amount:");
+                    int withdraw = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("withdraw +"  "+ "Withdraw Successful");
                     break;
 
                 case 3:
+                    Console.Write("Enter Deposite Amount:");
+                    int deposit = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Amount Deposited Successfully");
                     break;
 
