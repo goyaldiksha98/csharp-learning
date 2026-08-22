@@ -13,29 +13,38 @@ namespace miniproject__Logic_System
 
             int attempt = 1;
 
+            string correctUsername = "admin";
+            string correctPassword = "admin123";
 
             while (attempt <= 3)
             {
-                Console.Write("Enter a Password:");
-                int Password = Convert.ToInt32(Console.ReadLine());
-                if (Password == 1234)
+                Console.Write("Enter your Username: ");
+                string name = Console.ReadLine();
+
+                Console.Write("Enter your Password: ");
+                string password = Console.ReadLine();
+
+                if (name == correctUsername && password == correctPassword)
                 {
                     Console.WriteLine("Login Successfully");
                     break;
                 }
                 else
                 {
-                    Console.WriteLine("Wrong Password");
-                }
-                
-                if (attempt == 3)
-                {
-                    Console.WriteLine("Account Locked");
-                    break;
+                    Console.WriteLine("Invalid Username or Password");
 
+                    int remaining = 3 - attempt;
+
+                    if (remaining == 0)
+                    {
+                        Console.WriteLine("Account Locked");
+                        break;
+                    }
+
+                    Console.WriteLine("Attempts Remaining = " + remaining);
                 }
+
                 attempt++;
-
             }
         }
     }
